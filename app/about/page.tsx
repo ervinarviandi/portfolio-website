@@ -14,7 +14,7 @@ import FloatingNavDemo from "@/components/commons/FloatingNavDemo"
 import { TikTokEmbed } from 'react-social-media-embed';
 import Certificate from '@/app/about/slug/Certificate';
 import { ConfettiFireworks } from '@/components/commons/particles/ConfetiFireworksButton';
-const page = () => {
+const Page = () => {
 
   const [isLoading, setLoading] = useState(true)
   return (
@@ -39,12 +39,12 @@ const page = () => {
   <TikTokEmbed url="https://www.tiktok.com/@fooxi.io/video/7289111519676157190?is_from_webapp=1&sender_device=pc&web_id=7396504856021206544" width={325} />
 </div> */}
             <div className='paragraph mt-10'>
-              <p className=' lg:text-md text-sm'>Hello👋, I'm Ervin. With over 2+ years of experience in Web Development, covering both frontend. I'm particularly passionate about frontend side, where I focus on creating web applications that are not only precise but also user-friendly experiences.</p>
+              <p className=' lg:text-md text-sm'>Hello👋, I&apos;m Ervin. With over 2+ years of experience in Web Development, covering both frontend. I&apos;m particularly passionate about frontend side, where I focus on creating web applications that are not only precise but also user-friendly experiences.</p>
               <p className='mt-5 lg:text-md text-sm'>
               FYI, I really like and enjoy learning new things related to technology, as a front-end developer, I have to keep up with technological developments. In the future there will definitely be many new features, tools and programming languages that will make it easier for us to create and develop 🔨🔮 a website application. 💻📱
               </p>
               <p className='mt-5 lg:text-md text-sm'>
-              I'am passionate about Frontend Developer and enjoy working on the Web. I love combining my technical knowledge and creativity to build engaging and user-friendly websites and applications. 🔮
+              I&apos;am passionate about Frontend Developer and enjoy working on the Web. I love combining my technical knowledge and creativity to build engaging and user-friendly websites and applications. 🔮
               </p>
 
 
@@ -94,4 +94,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

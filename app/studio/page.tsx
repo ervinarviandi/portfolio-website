@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Workspace from "@/public/studio-workspace.jpg"
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Table from "@/app/studio/slug/table"
-const page = () => {
+const Page = () => {
   const [isLoading, setLoading] = useState(true)
   return (
     <>
@@ -15,9 +15,8 @@ const page = () => {
             <div className='pt-20'>
                 <h2 className='lg:text-5xl text-2xl font-bold'>Studio</h2>
                 <p className='lg:text-lg text-sm mt-5'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
-              
                 <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -72,7 +71,7 @@ const page = () => {
     {/* <iframe src="https://lottie.host/embed/b84e9e17-c820-46f0-8188-e435186ad5ee/Yl8j46KfFd.json"></iframe> */}
 
     <div>
-      <p className='mt-7'>One of the most important things for me when working from office is having the right tools. So, let's start with my main device - the Advan Workplus </p>
+      <p className='mt-7'>One of the most important things for me when working from office is having the right tools. So, let&apos;s start with my main device - the Advan Workplus </p>
 
       <div className='mt-10'>
         <h2 className='font-bold lg:text-4xl md-text-2xl text-xl my-5'>Advan Workplus</h2>
@@ -89,4 +88,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page;
