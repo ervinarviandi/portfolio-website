@@ -14,6 +14,7 @@ import FloatingNavDemo from "@/components/commons/FloatingNavDemo"
 import { TikTokEmbed } from 'react-social-media-embed';
 import Certificate from '@/app/about/slug/Certificate';
 import { ConfettiFireworks } from '@/components/commons/particles/ConfetiFireworksButton';
+import Footer from '@/components/commons/Footer';
 const Page = () => {
 
   const [isLoading, setLoading] = useState(true)
@@ -83,13 +84,24 @@ const Page = () => {
               I have experience with the following tools and technologies:
             </p>
             {/* <p className='mt-5 text-xs '> ini adalah beberapa teknologi yang sering saya gunakan untuk membuat projek</p> */}
-                <Cloud iconSlugs={['react',"nextdotjs", 'typescript', 'tailwindcss', "laravel", "firebase", "postgresql", "vercel","netlify","html","css","javascript","github","git","npm","yarn","bun","nodejs", "magicui", "figma", "shadcnui","nextui", "nodedotjs","svelte","prettier","eslint","postcss","html5","css3","bootstrap","framermotion", "magicui","aceternity","visualstudiocode", "mysql","adobephotoshop","notion" ]} /> 
+              
+          </div>
+
+          <div className='grid md:grid-cols-2 gap-5'>
+            <div className='flex flex-col'>
+            <Cloud iconSlugs={['react',"nextdotjs", 'typescript', 'tailwindcss', "laravel", "firebase", "postgresql", "vercel","netlify","html","css","javascript","github","git","npm","yarn","bun","nodejs", "magicui", "figma", "shadcnui","nextui", "nodedotjs","svelte","prettier","eslint","postcss","html5","css3","bootstrap","framermotion", "magicui","aceternity","visualstudiocode", "mysql","adobephotoshop","notion" ]} /> 
+            </div>
+            <div className='flex flex-col'>
+              <p className='my-5 lg:text-right lg:text-md text-sm'>During college, I have attended several seminars on web development and UI-UX designers, and I understand quite a bit about how to create a website or application, from design to maintenance, and the most important thing is how a website can be very easy to find and very easy to access on Google with a technique called Search Engine Optimization (SEO) and of course the website is very responsive when opened on various devices such as cellphones, tablets and laptops or computers, and is very user friendly.</p>
+            </div>
+
           </div>
 
           {/* {FloatingNavDemo()} */}
           <Certificate/>
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

@@ -12,7 +12,7 @@ import {
 const table = () => {
   return (
     <div className=''>
-          <Table className='border '>
+          <Table className='border rounded-b-lg'>
         <TableCaption>a list advan workplus setup </TableCaption>
         <TableHeader className=' border'>
           <TableRow className=''>

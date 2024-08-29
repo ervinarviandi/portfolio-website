@@ -14,6 +14,7 @@ import { MdOutlineDashboard, MdOutlineContactless } from "react-icons/md"
 import { FiUser } from "react-icons/fi"
 import { ModeToggle } from "../atoms/ModeToggle"
 import SheetsMenu from "../atoms/sheetsMenu"
+import { Button } from "../ui/button"
 
 const Navigation = () => {
   const [isLoading, setLoading] = useState(true)
@@ -195,7 +196,9 @@ const Navigation = () => {
                     <h1 className="text-lg font-bold">Ervin Arviandi</h1>
                     
                   </div>
-                  <div className="">{renderThemeChanger()}</div>
+                  <div className="p-1.2 hover:bg-[#525252] rounded-lg">
+                    {renderThemeChanger()}
+                    </div>
                 </div>
                 <hr className="border-1 my-5 border-solid border-white-100 dark:border-[#525252]" />
                 <ul className="mt-10 ">

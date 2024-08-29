@@ -63,7 +63,7 @@ const Featured = () => {
             <LuGithub size={20} />
             <Link href="https://github.com/ervinarviandi" >ervinarviandi</Link>
             </div>
-        <GitHubCalendar username="ervinarviandi" theme={explicitTheme} colorScheme='dark'  />
+        <GitHubCalendar username="ervinarviandi" colorScheme='dark' theme={explicitTheme}    />
           </div>
           </div>
         {/* <ActivityCalendar data={data} theme={explicitTheme} /> */}

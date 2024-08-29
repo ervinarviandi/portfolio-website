@@ -12,6 +12,7 @@ import  TextRevealDemo  from "@/components/commons/TextRevealDemo";
 import { TextBase } from "@/components/commons/TextBase";
 import { FeaturedCard } from "@/components/commons/FeaturedCard";
 import Questions from "@/components/commons/Questions";
+import GridMaps from "@/components/commons/GridMaps";
 
 
 export default function Home() {
@@ -25,11 +26,11 @@ export default function Home() {
     <TextRevealDemo/>
     <Articles/>
     <Projects/>
-    {/* <GridMaps/> */}
     <TextBase/>
-    <Featured/>
+    {/* <Featured/> */}
     <Questions/>
-    {/* <FeaturedCard/> */}
+    <FeaturedCard/>
+    {/* <GridMaps/> */}
     <Footer/>
     </TracingBeam>
    </div>

@@ -1,47 +1,109 @@
 import Navigation from '@/components/commons/Navigation'
-import React from 'react'
-import Image from 'next/image'
-import Logo from "@/public/adzkinbr.png"
-import Logo1 from "@/public/shostsqr.png"
-import Logo2 from "@/public/cek-khodam.png"
-import Footer from '@/components/commons/Footer'
-const page = () => {
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+
+const categories = [
+  {
+    name: 'Web Developer',
+    posts: [
+      {
+        id: 1,
+        title: 'Does drinking coffee make you smarter?',
+        date: '5h ago',
+        commentCount: 5,
+        shareCount: 2,
+      },
+      {
+        id: 2,
+        title: "So you've bought coffee... now what?",
+        date: '2h ago',
+        commentCount: 3,
+        shareCount: 2,
+      },
+    ],
+  },
+  {
+    name: 'UI/UX Design',
+    posts: [
+      {
+        id: 1,
+        title: 'Is tech making coffee better or worse?',
+        date: 'Jan 7',
+        commentCount: 29,
+        shareCount: 16,
+      },
+      {
+        id: 2,
+        title: 'The most innovative things happening in coffee',
+        date: 'Mar 19',
+        commentCount: 24,
+        shareCount: 12,
+      },
+    ],
+  },
+  {
+    name: 'Graphics Design',
+    posts: [
+      {
+        id: 1,
+        title: 'Ask Me Anything: 10 answers to your questions about coffee',
+        date: '2d ago',
+        commentCount: 9,
+        shareCount: 5,
+      },
+      {
+        id: 2,
+        title: "The worst advice we've ever heard about coffee",
+        date: '4d ago',
+        commentCount: 1,
+        shareCount: 2,
+      },
+    ],
+  },
+]
+
+export default function Example() {
   return (
     <>
     <Navigation/>
-    <div className='w-full'>
-        <div className="lg:max-w-5xl mx-auto px-5 py-10 ">
-            <div className='pt-20 '>
-                <h2 className='lg:text-5xl text-2xl font-bold'>Works</h2>
-                <p className='lg:text-lg text-sm mt-5'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
-            </div>
-            <div className='grid md:grid-cols-2 gap-5 '>
-              <div className='flex flex-col relative '>
-                <div className='backdrop-blur-lg  bg-transparent rounded-xl overflow-hidden'>
-                <Image src={Logo} width={500} height={500} alt='work' className='rounded-xl bg-transparent backdrop-blur-lg blur hover:blur-none duration-700 transition-all'/>
-                </div>
-                <h3 className=' absolute font-bold text-3xl right-0 left-0 bottom-0 top-0 text-center place-content-center  text-white '>Web Developer</h3>
-                </div>
-              <div className='flex flex-col relative '>
-                <div className='backdrop-blur-lg bg-transparent rounded-xl overflow-hidden '>
-                <Image src={Logo1} width={500} height={500} alt='work' className='ounded-xl bg-transparent backdrop-blur-lg blur hover:blur-none duration-700 transition-all'/>
-                </div>
-                <h3 className='absolute left-0 right-0 top-0 bottom-0 text-center place-content-center text-white text-2xl font-bold'>Graphics Design</h3>
-                </div>
-              <div className='flex flex-col relative '>
-                <div className='backdrop-blur-lg bg-transparent rounded-xl overflow-hidden'>
-                <Image src={Logo2} width={500} height={500} alt='work' className='ounded-xl bg-transparent backdrop-blur-lg blur hover:blur-none duration-700 transition-all'/>
-                </div>
-                <div className=''>
-                <h3 className='absolute font-bold text-2xl left-0 right-0 bottom-0 top-0 text-center place-content-center text-white '>UI/UX Design</h3>
-                </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <Footer/>
+    <div className="flex h-screen w-full justify-center pt-24 px-4">
+      <div className="w-full max-w-md">
+        <TabGroup>
+          <TabList className="flex gap-4">
+            {categories.map(({ name }) => (
+              <Tab
+                key={name}
+                className="rounded-full py-1 px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-white/10 data-[hover]:bg-white/5 data-[selected]:data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white"
+              >
+                {name}
+              </Tab>
+            ))}
+          </TabList>
+          <TabPanels className="mt-3">
+            {categories.map(({ name, posts }) => (
+              <TabPanel key={name} className="rounded-xl bg-white/5 p-3">
+                <ul>
+                  {posts.map((post) => (
+                    <li key={post.id} className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5">
+                      <a href="#" className="font-semibold text-white">
+                        <span className="absolute inset-0" />
+                        {post.title}
+                      </a>
+                      <ul className="flex gap-2 text-white/50" aria-hidden="true">
+                        <li>{post.date}</li>
+                        <li aria-hidden="true">&middot;</li>
+                        <li>{post.commentCount} comments</li>
+                        <li aria-hidden="true">&middot;</li>
+                        <li>{post.shareCount} shares</li>
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              </TabPanel>
+            ))}
+          </TabPanels>
+        </TabGroup>
+      </div>
+    </div>
     </>
   )
 }
-
-export default page

@@ -62,17 +62,17 @@ export const WavyBackground = ({
   };
 
   const waveColors = colors ?? [
-    // "#38bdf8",
+    "#38bdf8",
     "#818cf8",
     "#c084fc",
-    // "#e879f9",
+    "#e879f9",
     "#22d3ee",
   ];
   const drawWave = (n: number) => {
     nt += getSpeed();
     for (i = 0; i < n; i++) {
       ctx.beginPath();
-      ctx.lineWidth = waveWidth || 20;
+      ctx.lineWidth = waveWidth || 50;
       ctx.strokeStyle = waveColors[i % waveColors.length];
       for (x = 0; x < w; x += 5) {
         var y = noise(x / 800, 0.3 * i, nt) * 100;
@@ -85,8 +85,8 @@ export const WavyBackground = ({
 
   let animationId: number;
   const render = () => {
-    ctx.fillStyle =   backgroundFill ||containerClassName === "dark " ? "#0A0A0A" : "#2e1065"    ; // TODO "white" : "black" // TODO
-    ctx.globalAlpha = waveOpacity || 0;
+    // ctx.fillStyle = backgroundFill || "black";
+    ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
     animationId = requestAnimationFrame(render);
@@ -112,20 +112,19 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "dark:bg-[#0A0A0A] bg-white flex flex-col items-center justify-center",
-         
-     
+        "h-screen flex flex-col items-center justify-center",
+        containerClassName
       )}
     >
       <canvas
-        className="  bg-transparent inset-0 z-0"
+        className=" inset-0 z-0"
         ref={canvasRef}
         id="canvas"
         style={{
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}
       ></canvas>
-      <div className={cn("relative z-10", className)} {...props}>
+      <div className={cn(" z-10", className)} {...props}>
         {children}
       </div>
     </div>

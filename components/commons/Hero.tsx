@@ -52,11 +52,13 @@ const Hero = () => {
               onLoad={() => setLoading(false)}  alt='logo' />
                 </div>
                 <div className=''>
+                  <Link href={"/contact"}>
                 <Button
                 borderRadius="1.75rem"
-                className="bg-white dark:bg-[#0a0a0a] text-black dark:text-white  border-neutral-200 dark:border-neutral-700"> 
+                className="bg-white dark:bg-[#0a0a0a] text-black dark:text-white  border-neutral-200 dark:border-neutral-700 "> 
                 Get In Touch
                 </Button>
+                </Link>
                 {/* <ShinyButton text="Get In Touch" className="p-4 border font-bold rounded-lg" /> */}
                 {/* <Link href="/contact" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Get In Touch</Link> */}
                 <Link href="/contact" className=" dark:text-white text-black font-bold py-2 px-4 rounded-lg">Resume</Link>

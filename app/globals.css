@@ -148,7 +148,8 @@ body {
 
 *::-webkit-scrollbar-track {
   background: var(--secondary);
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  size: 20cm;
 }
 
 
@@ -157,8 +158,9 @@ body {
 
   *::-webkit-scrollbar-thumb {
     background-color: var(--primary);
-    border-radius: 14px;
+    border-radius: 5px;
     border: 0px solid var(--primary);
+
   }
 
   *::-webkit-scrollbar-thumb:hover {
