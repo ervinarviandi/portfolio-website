@@ -8,7 +8,7 @@ const Aboutme = () => {
             <div className='grid md:grid-cols-2 gap-5'>
                 <div className='flex flex-col'>
                     <p className='text-md'>About Me</p>
-                    <p className=''>I'm Ervin, a Front-end engineer who loves intuitive, clean and modern UI design.</p>
+                    <p className=''>I&apos;m Ervin, a Front-end engineer who loves intuitive, clean and modern UI design.</p>
                 </div>
                 <div className='flex flex-col'>
                     <div className='grid md:grid-cols-3 gap-5'>

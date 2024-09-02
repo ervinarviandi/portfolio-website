@@ -157,7 +157,7 @@ const Page = () => {
 
 
               <p className='mt-5 lg:text-md text-sm'>
-                I a&#39;m Moh. Ervin Arviandi, a graduate from bumigora university in mataram, majoring in application software engineering, i graduate with gpa of 3.24, i aspire to become someone who is an expert in making applications, and work in a company. 
+                I a&#39;m Moh. Ervin Arviandi, a graduate from bumigora university in mataram, majoring in application software engineering, i aspire to become someone who is an expert in making applications, and work in a company. 
                 
               </p>
             </div>

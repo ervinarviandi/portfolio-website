@@ -1,9 +1,7 @@
 import React from 'react'
 import cardlist from '@/app/about/slug/maping/Certificate'
-import { map } from 'leaflet'
-
+import Link from 'next/link'
 import Image from 'next/image'
-import { title } from 'process'
 
 
 
@@ -71,6 +69,7 @@ const certificate = () => {
         <div className='lg:max-w-5xl mx-auto lg:px-0 px-5'>
             <h2 className='lg:text-3xl text-2xl font-bold mt-20'>Certificate </h2>
             <p className='lg:text-md text-sm mt-7'>Some webinar certificates that I have received from several well-known platforms when learning about the career of a frontend developer in the industry, web development and UI UX designer</p>
+            <p className='text-md'>Klik <Link href="/certificate" className='hover:font-bold text-sky-500'>here</Link> to see all certificates</p>
             <div className='grid gap-5 mt-10'>
                 <div className='w-full flex flex-col gap-5 border-l  relative lg:ml-10 '>  
                 { certificate.map((items) => (
