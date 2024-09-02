@@ -2,7 +2,7 @@ import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
  
 export function TextBase() {
   return (
-    <div className="w-full py-10 z-50">
+    <div className="w-full py-10 z-50 h-96">
         <div className="w-full  mx-auto px-5 ">
         <VelocityScroll
       text="Web Developer, Digital Artist, Frontend Engineer" 

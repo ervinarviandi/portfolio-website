@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Workspace from "@/public/studio-workspace.jpg"
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Table from "@/app/studio/slug/table"
+import Footer from '@/components/commons/Footer'
 const Page = () => {
   const [isLoading, setLoading] = useState(true)
   return (
@@ -84,6 +85,7 @@ const Page = () => {
             </div>
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

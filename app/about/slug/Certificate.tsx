@@ -43,8 +43,8 @@ const certificate = () => {
             logo:"/logo/webinar/revou.png" ,
             Link : "https://github.com/abhishek-raj/Projects",
             name : "Revou",
-            title:"Coding Camp Exploring Front-End Developer : Wonders & Opportunities",
-            date: "Senin 02-april-2022"
+            title:"Become Software Engineer at Bukalapak",
+            date: "Senin 29-agustus-2024"
 
         },
         {
@@ -82,7 +82,7 @@ const certificate = () => {
                         <div className='mt-2 ml-16'>
                         <h2>{items.name}</h2>
                         <div className=''>
-                            <p className='lg:text-lg text-sm dark:text-gray-400 text-gray-600'>{items.title}</p>
+                            <p className='lg:text-md text-sm dark:text-gray-400 text-gray-600'>{items.title}</p>
                         </div>
                         </div>
                             </div>

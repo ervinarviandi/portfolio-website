@@ -12,7 +12,7 @@ import  TextRevealDemo  from "@/components/commons/TextRevealDemo";
 import { TextBase } from "@/components/commons/TextBase";
 import { FeaturedCard } from "@/components/commons/FeaturedCard";
 import Questions from "@/components/commons/Questions";
-import GridMaps from "@/components/commons/GridMaps";
+import Aboutme from "@/components/commons/Aboutme";
 
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
     {/* <Featured/> */}
     <Questions/>
     <FeaturedCard/>
-    {/* <GridMaps/> */}
+    <Aboutme/>
     <Footer/>
     </TracingBeam>
    </div>

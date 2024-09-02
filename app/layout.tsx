@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
+import { Finlandica } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/commons/theme-provider";
 import NextTopLoader from "nextjs-toploader";
 import Cursor from "@/components/commons/particles/Cursor";
-const sora = Sora({ subsets: ["latin"] });
+const finlandica = Finlandica({ weight: '400', subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ervin Arviandi personal website",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={sora.className} suppressHydrationWarning={true}>
+      <body className={finlandica.className} suppressHydrationWarning={true}>
         <Cursor/>
         <ThemeProvider
           attribute="class"
@@ -34,7 +34,7 @@ export default function RootLayout({
             showSpinner={true}
             easing="ease"
             speed={200}
-            shadow="0 0 10px #059669,0 0 5px #059669"
+            shadow="0 0 10px #6366f1,0 0 5px #6366f1"
           />
           <link
             rel="icon"

@@ -70,24 +70,24 @@ export default [
         image : "/next-starter-blog.png"
         
     },
-    {
-        id: 8,   
-        profiles:"" ,       
-        Link : "https://github.com/abhishek-raj/Projects",
-        name : "QrCode Generator App",
-        description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
-        image : "/bubble-cleaner.jpg"
+    // {
+    //     id: 8,   
+    //     profiles:"" ,       
+    //     Link : "https://github.com/abhishek-raj/Projects",
+    //     name : "QrCode Generator App",
+    //     description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
+    //     image : "/bubble-cleaner.jpg"
         
-    },
-    {
-        id: 9,   
-        profiles:"" ,       
-        Link : "https://github.com/abhishek-raj/Projects",
-        name : "QrCode Generator App",
-        description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
-        image : "/bubble-cleaner.jpg"
+    // },
+    // {
+    //     id: 9,   
+    //     profiles:"" ,       
+    //     Link : "https://github.com/abhishek-raj/Projects",
+    //     name : "QrCode Generator App",
+    //     description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
+    //     image : "/bubble-cleaner.jpg"
         
-    },
+    // },
 
      
 
