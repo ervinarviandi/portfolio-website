@@ -25,7 +25,7 @@ const Page = () => {
     <>
     <Navigation/>
     <motion.section  className='w-full ' initial={{ y: 250 }} animate={{ y: -10 }} transition={{ type: "spring" }}>
-        <div className='lg:max-w-5xl mx-auto px-5'>
+        <div className='lg:max-w-5xl mx-auto px-5 pt-10'>
           <div className='flex justify-between items-center pt-16'> 
           <Link href="/" className='flex items-center gap-2 mb-4 mt-6 '> <HiOutlineArrowCircleLeft size={20}/>Back</Link>
           </div>

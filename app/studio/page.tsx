@@ -14,7 +14,7 @@ const Page = () => {
     <>
     <Navigation/>
     <motion.section className='w-full' initial={{ y: 250 }} animate={{ y: -10 }} transition={{  type: "spring" }}>
-        <div className='lg:max-w-5xl mx-auto px-5 '>
+        <div className='lg:max-w-5xl mx-auto px-5 pt-10 '>
             <div className='pt-16'>
                 <h2 className='lg:text-5xl text-2xl font-bold'>Studio</h2>
                 <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>A work-from-home workspace that allows me to efficiently complete most tasks.</p>
