@@ -13,11 +13,13 @@ import { TextBase } from "@/components/commons/TextBase";
 import { FeaturedCard } from "@/components/commons/FeaturedCard";
 import Questions from "@/components/commons/Questions";
 import Aboutme from "@/components/commons/Aboutme";
+import LoaderScreen from "@/components/commons/LoaderScreen";
 
 
 export default function Home() {
   return (
    <div className="">
+    <LoaderScreen/>
     <NextTopLoader />
     <Navigation/>
     <Hero/>

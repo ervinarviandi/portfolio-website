@@ -35,7 +35,7 @@ export function ConfettiFireworks() {
 
   return (
     <div className="">
-      <Button onClick={handleClick} className="dark:bg-gray-500 rounded-lg px-6 py-2 dark:text-white bg-black text-gray-300 flex items0-center gap-x-2">< PiConfettiBold size={20} />Click Me</Button>
+      <Button onClick={handleClick} className="dark:bg-[#777777] rounded-lg px-6 py-2 dark:text-white bg-black text-gray-300 flex items0-center gap-x-2">< PiConfettiBold size={20} />Confetti</Button>
     </div>
   );
 }

@@ -7,11 +7,12 @@ import Link from 'next/link'
 import GradualSpacing from '../magicui/gradual-spacing'
 import ShinyButton from '../magicui/shiny-button'
 import { Button } from '../ui/moving-border'
+import {motion} from "framer-motion"
 const Hero = () => {
   const [isLoading, setLoading] = useState(true)
 
   return (
-    <div className='w-full h-[100vh] dark:bg-[#0A0A0A]  bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]  relative flex items-center justify-center  '  >
+    <motion.section className='w-full h-[100vh] dark:bg-[#0A0A0A]  bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]  relative flex items-center justify-center  '  initial={{ y: 250 }} animate={{ y: -10 }} transition={{  delay: 3.1, type: "spring" }}>
        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#0A0A0A] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,transparent_20%,#0A0A0A_100%,#0A0A0A_80%)]"></div>
         <div className='lg:max-w-5xl mx-auto px-5'>
             <div className='grid md:grid-cols-2 gap-x-5'>
@@ -68,7 +69,7 @@ const Hero = () => {
             </div>
         </div>
                 {/* <BackgroundBeams /> */}
-    </div>
+    </motion.section>
   )
 }
 

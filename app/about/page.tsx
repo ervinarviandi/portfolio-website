@@ -15,20 +15,16 @@ import { TikTokEmbed } from 'react-social-media-embed';
 import Certificate from '@/app/about/slug/Certificate';
 import { ConfettiFireworks } from '@/components/commons/particles/ConfetiFireworksButton';
 import Footer from '@/components/commons/Footer';
-
+import {motion} from "framer-motion"
 import Maps from '../maps/page';
 const Page = () => {
-
-
-
-
 
 
   const [isLoading, setLoading] = useState(true)
   return (
     <>
     <Navigation/>
-    <div className='w-full '>
+    <motion.section  className='w-full ' initial={{ y: 250 }} animate={{ y: -10 }} transition={{ type: "spring" }}>
         <div className='lg:max-w-5xl mx-auto px-5'>
           <div className='flex justify-between items-center pt-16'> 
           <Link href="/" className='flex items-center gap-2 mb-4 mt-6 '> <HiOutlineArrowCircleLeft size={20}/>Back</Link>
@@ -115,7 +111,7 @@ const Page = () => {
        
          
         </div>
-    </div>
+    </motion.section>
     <Footer/>
     </>
   )

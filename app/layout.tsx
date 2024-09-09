@@ -27,14 +27,14 @@ export default function RootLayout({
           disableTransitionOnChange>
           <NextTopLoader
             initialPosition={0.08}
-            color="#6366f1"
+            color="#0ea5e9"
             crawlSpeed={200}
             height={3}
             crawl={true}
             showSpinner={true}
             easing="ease"
             speed={200}
-            shadow="0 0 10px #6366f1,0 0 5px #6366f1"
+            shadow="0 0 10px #0ea5e9,0 0 5px #0ea5e9"
           />
           <link
             rel="icon"

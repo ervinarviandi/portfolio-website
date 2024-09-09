@@ -1,3 +1,5 @@
+import { Description } from "@radix-ui/react-dialog";
+import { profile } from "console";
 import { icons } from "lucide-react";
 
 export default [
@@ -49,7 +51,7 @@ export default [
         demo : "https://pomodoro-ervin.vercel.app/",
         source:"https://github.com/ervinarviandi/Pomodoro-App",
         name : "Pomodoro App",
-        description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
+        description : "A Simple application that implements pomodoro technique.",
         image : "/pomodoro-ervin.png",
         featured : "Featured",
         
@@ -57,41 +59,21 @@ export default [
     {
          id  :  6 ,
          profiles:"" ,
-        Link : "https://github.com/abhishek-raj/Projects",
+         demo: "https://react-link.vercel.app/",
+        source : "https://github.com/ervinarviandi/React-Link",
         name : "Linktree Clone",
-        description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
+        description : "A Bio link to connect customers to the business or portfolio website.",
         image : "/links.png"
         
     },
     {
          id  :  7 ,
          profiles:"" ,
-        Link : "https://github.com/abhishek-raj/Projects",
+         demo : "https://ervin-starter-kit-next-app-router.vercel.app/",
+        source : "https://github.com/ervinarviandi/ervin-starterKit-next-app-router",
         name : "Next App Router Starter Kit",
-        description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
-        image : "/next-starter-blog.png"
-        
+        description : " Next js 14.0.2 starter kit using Tailwind CSS, Zustand, SWR, Lint and Formatter.",
+        image : "/nextstarter.png"  
     },
-    // {
-    //     id: 8,   
-    //     profiles:"" ,       
-    //     Link : "https://github.com/abhishek-raj/Projects",
-    //     name : "QrCode Generator App",
-    //     description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
-    //     image : "/bubble-cleaner.jpg"
-        
-    // },
-    // {
-    //     id: 9,   
-    //     profiles:"" ,       
-    //     Link : "https://github.com/abhishek-raj/Projects",
-    //     name : "QrCode Generator App",
-    //     description : "A Simple QR Code Generator. You can convert the web link into QR Code instantly here and download it to your local device.",
-    //     image : "/bubble-cleaner.jpg"
-        
-    // },
-
-     
-
 
 ]

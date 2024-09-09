@@ -7,12 +7,13 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Table from "@/app/studio/slug/table"
 import Footer from '@/components/commons/Footer'
 import GithubCalender from './slug/GithubCalender'
+import {motion} from "framer-motion"
 const Page = () => {
   const [isLoading, setLoading] = useState(true)
   return (
     <>
     <Navigation/>
-    <div className='w-full '>
+    <motion.section className='w-full' initial={{ y: 250 }} animate={{ y: -10 }} transition={{  type: "spring" }}>
         <div className='lg:max-w-5xl mx-auto px-5 '>
             <div className='pt-16'>
                 <h2 className='lg:text-5xl text-2xl font-bold'>Studio</h2>
@@ -89,7 +90,7 @@ const Page = () => {
     </div>
       </div>
         </div>
-    </div>
+    </motion.section>
     <Footer/>
     </>
   )

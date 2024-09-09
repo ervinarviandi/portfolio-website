@@ -1,3 +1,4 @@
+"use client"
 import Navigation from '@/components/commons/Navigation'
 import React from 'react'
 import Link from 'next/link'
@@ -5,6 +6,7 @@ import { IoLogoGithub } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { LuGithub } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
+import { motion } from "framer-motion"
 import Footer from '@/components/commons/Footer';
 import {
     Table,
@@ -17,12 +19,11 @@ import {
   } from "@/components/ui/table"
 
 
-
 const page = () => {
   return (
     <>
     <Navigation/>
-    <div className='w-full'>
+    <motion.section className='w-full' initial={{ y: 250 }} animate={{ y: -10 }} transition={{  type: "spring" }}>
         <div className='lg:max-w-5xl mx-auto px-5'>
                 <h2 className='lg:text-5xl text-2xl font-bold pt-16'>Contact</h2>
                 <p className='lg:text-lg text-sm mt-5   dark:text-[#777777]'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
@@ -103,7 +104,7 @@ const page = () => {
 
 
         </div>
-    </div>
+    </motion.section>
     <Footer/>
     </>
   )
