@@ -30,8 +30,8 @@ const Page = () => {
           <Link href="/" className='flex items-center gap-2 mb-4 mt-6 '> <HiOutlineArrowCircleLeft size={20}/>Back</Link>
           </div>
 
-          <h2 className='lg:text-5xl text-2xl font-bold'>About 👋</h2>
-                <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
+          <h2 className='lg:text-5xl text-2xl font-bold'>About </h2>
+                <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>get to know me better, you can read a short profile about me 🧑‍💻 👋.</p>
                 <hr className='border-2 border-dashed w-full mt-5' />
 
           <div className='mt-10'>

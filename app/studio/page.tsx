@@ -17,7 +17,7 @@ const Page = () => {
         <div className='lg:max-w-5xl mx-auto px-5 '>
             <div className='pt-16'>
                 <h2 className='lg:text-5xl text-2xl font-bold'>Studio</h2>
-                <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
+                <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>A work-from-home workspace that allows me to efficiently complete most tasks.</p>
                 <hr className='border-2 border-dashed w-full mt-5' />
                 <CardContainer className="inter-var">
            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">

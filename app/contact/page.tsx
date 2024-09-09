@@ -26,7 +26,7 @@ const page = () => {
     <motion.section className='w-full' initial={{ y: 250 }} animate={{ y: -10 }} transition={{  type: "spring" }}>
         <div className='lg:max-w-5xl mx-auto px-5'>
                 <h2 className='lg:text-5xl text-2xl font-bold pt-16'>Contact</h2>
-                <p className='lg:text-lg text-sm mt-5   dark:text-[#777777]'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
+                <p className='lg:text-lg text-sm mt-5   dark:text-[#777777]'> Get in touch with me anytime, through social media, e-mail, or phone number 👋.</p>
                 <hr className='border-2 border-dashed w-full mt-5' />
             {/* <div className=''>
                 {

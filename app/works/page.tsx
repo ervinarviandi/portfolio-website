@@ -73,7 +73,8 @@ export default function Page() {
     <motion.section className='w-full' initial={{ y: 250 }} animate={{ y: -10 }} transition={{  type: "spring" }}>
       <div className='lg:max-w-5xl mx-auto px-5'>
       <h2 className='lg:text-5xl text-2xl font-bold pt-16'>Portfolio</h2>
-      <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
+      <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>I&apos;ve worked on a variety of projects, ranging from small MVPs to full-scale applications, also developed a wide array of features
+      and functionalities in projects.</p>
       <hr className='border-2 border-dashed w-full mt-5' />
         <Tabs/>
       </div>
