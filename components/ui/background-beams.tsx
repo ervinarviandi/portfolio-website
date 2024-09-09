@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { memo } from "react";
+import { MdPassword } from "react-icons/md";
+
+
+
+
+
 
 export const BackgroundBeams = memo(({ className }: { className?: string }) => {
   const paths = [
@@ -116,6 +122,10 @@ export const BackgroundBeams = memo(({ className }: { className?: string }) => {
               <stop offset="100%" stopColor="#AE48FF" stopOpacity="0"></stop>
             </motion.linearGradient>
           ))}
+          
+
+
+         
 
           <radialGradient
             id="paint0_radial_242_278"

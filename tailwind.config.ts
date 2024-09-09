@@ -29,6 +29,11 @@ const config = {
       },
     },
     extend: {
+
+
+      fontFamily: {
+        "Inconsolata": ["'Inconsolata'", ...defaultTheme.fontFamily.mono],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

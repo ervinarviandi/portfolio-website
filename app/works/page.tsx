@@ -1,7 +1,8 @@
 import Navigation from '@/components/commons/Navigation'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import Tabs from "@/app/works/slug/Tabs"
+import Tabs from "@/app/works/slug/Projects"
 import Footer from '@/components/commons/Footer'
+
 const categories = [
   {
     name: 'Web Developer',
@@ -68,8 +69,9 @@ export default function Example() {
     <Navigation/>
     <div className='w-full'>
       <div className='lg:max-w-5xl mx-auto px-5'>
-        <h2 className='text-3xl font-bold pt-16'>Portfolio</h2>
-        <p className='text-md '> Some of my works</p>
+      <h2 className='lg:text-5xl text-2xl font-bold pt-16'>Portfolio</h2>
+      <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
+      <hr className='border-2 border-dashed w-full mt-5' />
         <Tabs/>
       </div>
     </div>

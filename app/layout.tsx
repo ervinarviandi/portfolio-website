@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Finlandica } from "next/font/google";
+import { Signika_Negative } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/commons/theme-provider";
 import NextTopLoader from "nextjs-toploader";
 import Cursor from "@/components/commons/particles/Cursor";
-const finlandica = Finlandica({ weight: '400', subsets: ["latin"] });
+const signika = Signika_Negative({ weight: '400', subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ervin Arviandi personal website",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={finlandica.className} suppressHydrationWarning={true}>
+      <body className={signika.className} suppressHydrationWarning={true}>
         <Cursor/>
         <ThemeProvider
           attribute="class"

@@ -15,21 +15,17 @@ import {
     TableHeader,
     TableRow,
   } from "@/components/ui/table"
+
+
+
 const page = () => {
-
-
-
-   
-
-   
-
   return (
     <>
     <Navigation/>
     <div className='w-full'>
         <div className='lg:max-w-5xl mx-auto px-5'>
                 <h2 className='lg:text-5xl text-2xl font-bold pt-16'>Contact</h2>
-                <p className='lg:text-lg text-sm mt-5'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
+                <p className='lg:text-lg text-sm mt-5   dark:text-[#777777]'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
                 <hr className='border-2 border-dashed w-full mt-5' />
             {/* <div className=''>
                 {
@@ -57,7 +53,7 @@ const page = () => {
         </TableHeader>
         <TableBody className='border'>
           <TableRow className='border'>
-            <TableCell className="font-medium">Adress</TableCell>
+            <TableCell className="font-medium">Address</TableCell>
             <TableCell>Lombok, Indonesia</TableCell>
           </TableRow>
           <TableRow>
@@ -69,40 +65,38 @@ const page = () => {
             </div>
             {/* AKhir Table */}
 
-
-
             {/* Table Social Media */}
             <div>
-                <h2 className='lg:text-3xl text-2xl font-bold mt-10 mb-5 '>Social Media</h2>
+              <h2 className='lg:text-3xl text-2xl font-bold mt-10 mb-5 '>Social Media</h2>
                 <Table className='border rounded-b-lg'>
-        <TableCaption>a list contact </TableCaption>
-        <TableHeader className=' border'>
-          <TableRow className=''>
-            <TableHead  className="w-[100px]">Contact</TableHead>
-            <TableHead className=''>Detail</TableHead>
-            {/* <TableHead>Method</TableHead>
-            <TableHead className="text-right">Amount</TableHead> */}
-          </TableRow>
-        </TableHeader>
-        <TableBody className='border'>
-          <TableRow className='border'>
-            <TableCell className="font-medium">Linkedin</TableCell>
-            <TableCell>Lombok, Indonesia</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell className="font-medium">Instagram</TableCell>
-            <TableCell><Link href="mailto:muhamadervin34@gmail.com" className='dark:text-sky-400 text-sky-500'>muhamadervin34@gmail.com</Link></TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell className="font-medium">Github</TableCell>
-            <TableCell><Link href="https://github.com/ervinarviandi" className='dark:text-sky-400 text-sky-500'>https://github.com/ervinarviandi</Link></TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell className="font-medium">Instagram</TableCell>
-            <TableCell><Link href="mailto:muhamadervin34@gmail.com" className='dark:text-sky-400 text-sky-500'>muhamadervin34@gmail.com</Link></TableCell>
-          </TableRow>
-        </TableBody>
-      </Table>
+                <TableCaption>a list social media </TableCaption>
+                <TableHeader className=' border'>
+                  <TableRow className=''>
+                    <TableHead  className="w-[100px]">Contact</TableHead>
+                    <TableHead className=''>Detail</TableHead>
+                    {/* <TableHead>Method</TableHead>
+                    <TableHead className="text-right">Amount</TableHead> */}
+                  </TableRow>
+                </TableHeader>
+                <TableBody className='border'>
+                  {/* <TableRow className='border'>
+                    <TableCell className="font-medium">Linkedin</TableCell>
+                    <TableCell>Lombok, Indonesia</TableCell>
+                  </TableRow> */}
+                  <TableRow>
+                    <TableCell className="font-medium">Instagram</TableCell>
+                    <TableCell><Link href="https://www.instagram.com/ervinarviandi/" className='dark:text-sky-400 text-sky-500'>https://www.instagram.com/ervinarviandi/</Link></TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium">Github</TableCell>
+                    <TableCell><Link href="https://github.com/ervinarviandi" className='dark:text-sky-400 text-sky-500'>https://github.com/ervinarviandi</Link></TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium">X</TableCell>
+                    <TableCell><Link href="https://x.com/EArviandi" className='dark:text-sky-400 text-sky-500'>https://x.com/EArviandi</Link></TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
             </div>
             {/* Akhir Table Social Media */}
 

@@ -86,11 +86,6 @@
 
 
 
-body {
-  /* height: 300vh */
-}
-
-
 .myScrollbar::-webkit-scrollbar {
   display: none;
 }

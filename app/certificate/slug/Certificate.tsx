@@ -21,7 +21,7 @@ const Certificate = () => {
     const [isLoading, setLoading] = useState(true);
 
   return (
-    <div className='grid md:grid-cols-3 gap-5 mx-auto mt-10'>
+    <div className='grid md:grid-cols-3 gap-5 mx-auto py-10'>
         <div className='flex flex-col'>
             <Image src={Dibimbing} width={400} height={400} alt="image1" className={`
               duration-700 ease-in-out group-hover:opacity-75

@@ -13,10 +13,11 @@ const Hero = () => {
   return (
     <div className='w-full h-[100vh] dark:bg-[#0A0A0A]  bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]  relative flex items-center justify-center  '  >
        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#0A0A0A] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,transparent_20%,#0A0A0A_100%,#0A0A0A_80%)]"></div>
-        <div className='lg:max-w-6xl mx-auto px-5'>
+        <div className='lg:max-w-5xl mx-auto px-5'>
             <div className='grid md:grid-cols-2 gap-x-5'>
                 <div className='flex flex-col relative z-10'>
-                <Image src={Logo} width={150} height={200}  alt='profiles' className={`
+                <Image src={Logo} width={150} height={200}  alt='profiles' className={` grayscale
+                hover:grayscale-0
                 duration-700 ease-in-out group-hover:opacity-75 lg:hidden block hover:rotate-12 lg:mt-32 
                 ${
                   isLoading
@@ -42,7 +43,8 @@ const Hero = () => {
                  
                 </div>
                 <div className='flex flex-col relative z-10'>
-                  <Image src={Logo} width={300} height={200} className={`
+                  <Image src={Logo} width={300} height={200} className={` grayscale
+                hover:grayscale-0
                 duration-700 ease-in-out group-hover:opacity-75 mx-auto  rotate-6 lg:block hidden  
                 ${
                   isLoading
@@ -61,7 +63,7 @@ const Hero = () => {
                 </Link>
                 {/* <ShinyButton text="Get In Touch" className="p-4 border font-bold rounded-lg" /> */}
                 {/* <Link href="/contact" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Get In Touch</Link> */}
-                <Link href="/contact" className=" dark:text-white text-black font-bold py-2 px-4 rounded-lg">Resume</Link>
+                <Link href="/contact" className=" dark:text-[#777777] text-black font-bold py-2 px-4 rounded-lg">Resume</Link>
                 </div>
             </div>
         </div>

@@ -1,3 +1,4 @@
+import { icons } from "lucide-react";
 
 export default [
     {
@@ -7,7 +8,8 @@ export default [
         source:"https://github.com/ervinarviandi/Cek-Khodam",
         name : "Cek Khodam App",
         description : "A simple application created to find out what khodam is inside a person. This khodam checking application appeared because it was popular on TikTok social media.",
-        image : "/cek-khodam.png"
+        image : "/cek-khodam.png",
+        gambar: "/logo/icons/nextjs.png"
         
     },
     {

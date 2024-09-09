@@ -19,12 +19,11 @@ interface card {
 
 const Projects = () => {
 
-
   const [isLoading, setLoading] = useState(true);
   return (
     <>
     < div className='w-full py-10'>
-        <div className='lg:max-w-6xl mx-auto px-5'>
+        <div className='lg:max-w-5xl mx-auto px-5'>
           <h2 className="lg:text-3xl text-xl font-bold my-5">Check out my latest work</h2>
             {/* <Cards/> */}
             <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-5 ">
@@ -77,7 +76,7 @@ const Projects = () => {
                     <h2 className="bg-gradient-to-r from-blue-400 via-cyan-300 to-cyan-200 bg-clip-text text-lg font-bold group-hover:text-transparent md:text-xl    ">
                       {card.name}
                     </h2>
-                    <p className="md:text-md py-3 text-sm text-white-100 dark:text-dark-100">
+                    <p className="md:text-md py-3 text-sm dark:text-[#777777]">
                      {card.description}
                     </p>
                     <div className="flex items-center gap-2">

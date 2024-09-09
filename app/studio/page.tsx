@@ -6,6 +6,7 @@ import Workspace from "@/public/studio-workspace.jpg"
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Table from "@/app/studio/slug/table"
 import Footer from '@/components/commons/Footer'
+import GithubCalender from './slug/GithubCalender'
 const Page = () => {
   const [isLoading, setLoading] = useState(true)
   return (
@@ -13,9 +14,10 @@ const Page = () => {
     <Navigation/>
     <div className='w-full '>
         <div className='lg:max-w-5xl mx-auto px-5 '>
-            <div className='pt-20'>
+            <div className='pt-16'>
                 <h2 className='lg:text-5xl text-2xl font-bold'>Studio</h2>
-                <p className='lg:text-lg text-sm mt-5'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
+                <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>A work-from-office workspace that allows me to efficiently complete most tasks.</p>
+                <hr className='border-2 border-dashed w-full mt-5' />
                 <CardContainer className="inter-var">
            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
@@ -74,15 +76,18 @@ const Page = () => {
     <div>
       <p className='mt-7'>One of the most important things for me when working from office is having the right tools. So, let&apos;s start with my main device - the Advan Workplus </p>
 
+      {/* Table */}
       <div className='mt-10'>
         <h2 className='font-bold lg:text-4xl md-text-2xl text-xl my-5'>Advan Workplus</h2>
         <Table/>
       </div>
 
-      <p>This Advan Workplus may not have the latest spech</p>
-
+      {/* Github Calender */}
+      <div>
+        <GithubCalender/>
+      </div>
     </div>
-            </div>
+      </div>
         </div>
     </div>
     <Footer/>

@@ -18,7 +18,6 @@ import Aboutme from "@/components/commons/Aboutme";
 export default function Home() {
   return (
    <div className="">
-    <TracingBeam>
     <NextTopLoader />
     <Navigation/>
     <Hero/>
@@ -27,12 +26,11 @@ export default function Home() {
     <Articles/>
     <Projects/>
     <TextBase/>
-    {/* <Featured/> */}
     <Questions/>
-    <FeaturedCard/>
+    <Featured/>
+    {/* <FeaturedCard/> */}
     <Aboutme/>
     <Footer/>
-    </TracingBeam>
    </div>
   );
 }

@@ -21,7 +21,7 @@ const Articles = () => {
 
   return (
     <div className='w-full py-10 h-96 '>
-        <div className='md:max-w-7xl mx-auto lg:px-10 px-5 '>
+        <div className='md:max-w-5xl mx-auto lg:px-10 px-5 '>
           <div className='flex justify-between items-center'>
           <h1 className='md:text-3xl text-xl font-bold'>{Articles_Title}</h1>
           <Link href="/myBlog" className=' item-center gap-2 md:flex hidden text-sm dark:text-dark-100'>

@@ -9,6 +9,9 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+
+
+
 export const TracingBeam = ({
   children,
   className,
@@ -49,9 +52,9 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-full max-w-5xl mx-auto h-full ", className)}
+      className={cn("relative w-full max-w-5xl mx-auto h-full border border-teal-400  ", className)}
     >
-      <div className="absolute z-50 -left-4 md:-left-20 top-3">
+      <div className="absolute z-50 -left-4 md:-left-20 top-3 lg:block hidden">
         <motion.div
           transition={{
             duration: 0.2,

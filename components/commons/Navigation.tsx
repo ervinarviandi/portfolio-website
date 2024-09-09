@@ -14,7 +14,6 @@ import { MdOutlineDashboard, MdOutlineContactless } from "react-icons/md"
 import { FiUser } from "react-icons/fi"
 import { ModeToggle } from "../atoms/ModeToggle"
 import SheetsMenu from "../atoms/sheetsMenu"
-import { Button } from "../ui/button"
 
 const Navigation = () => {
   const [isLoading, setLoading] = useState(true)
@@ -27,7 +26,6 @@ const Navigation = () => {
     setNav(!nav)
   }
 
-  const [progress, setProgress] = useState(0)
   const { systemTheme, theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
