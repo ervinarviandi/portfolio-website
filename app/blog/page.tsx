@@ -1,5 +1,10 @@
 import Navigation from '@/components/commons/Navigation'
+import FlickeringGrid from '@/components/magicui/flickering-grid'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+import { canvas } from 'leaflet'
+import { Fullscreen } from 'lucide-react'
+import WritingArticles from './slug/Writing'
+import ArticlesBlog from './ArticlesBlog'
 
 const categories = [
   {
@@ -65,44 +70,26 @@ export default function Example() {
   return (
     <>
     <Navigation/>
-    <div className="flex h-screen w-full justify-center pt-24 px-4">
-      <div className="w-full max-w-md">
-        <TabGroup>
-          <TabList className="flex gap-4">
-            {categories.map(({ name }) => (
-              <Tab
-                key={name}
-                className="rounded-full py-1 px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-white/10 data-[hover]:bg-white/5 data-[selected]:data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white"
-              >
-                {name}
-              </Tab>
-            ))}
-          </TabList>
-          <TabPanels className="mt-3">
-            {categories.map(({ name, posts }) => (
-              <TabPanel key={name} className="rounded-xl bg-white/5 p-3">
-                <ul>
-                  {posts.map((post) => (
-                    <li key={post.id} className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5">
-                      <a href="#" className="font-semibold text-white">
-                        <span className="absolute inset-0" />
-                        {post.title}
-                      </a>
-                      <ul className="flex gap-2 text-white/50" aria-hidden="true">
-                        <li>{post.date}</li>
-                        <li aria-hidden="true">&middot;</li>
-                        <li>{post.commentCount} comments</li>
-                        <li aria-hidden="true">&middot;</li>
-                        <li>{post.shareCount} shares</li>
-                      </ul>
-                    </li>
-                  ))}
-                </ul>
-              </TabPanel>
-            ))}
-          </TabPanels>
-        </TabGroup>
+    <div className="full h-screen relative">
+      <div className='lg:max-w-5xl mx-auto px-5 pt-10 z-50'>
+      <h2 className='lg:text-5xl text-2xl font-bold pt-16'>Blog</h2>
+      <h4 className='font-bold py-5 lg:text-3xl text-2xl  '>Ervin Arviandi Writings : Stories & Learnings</h4>
+        <p className='lg:text-lg text-sm mt-5   dark:text-[#777777]'> crafting scalable, user-centric web solutions. Expertise in modern frameworks with a focus on performance optimization and intuitive interfaces 👋.</p>
+        <hr className='border-2 border-dashed w-full mt-5' />
+        <div className=''>
+          <ArticlesBlog/>
+        </div>
       </div>
+    <FlickeringGrid
+        className="z-0 absolute inset-0 size-full  "
+        squareSize={4}
+        gridGap={6}
+        color="#6B7280"
+        maxOpacity={0.5}
+        flickerChance={0.1}
+        height={330}
+        // width={ 300 }
+      />
     </div>
     </>
   )

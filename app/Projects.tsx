@@ -6,6 +6,17 @@ export default [
     {
         id  :  1 ,
         profiles:"" ,
+        demo : "https://scoreboards-ervin.vercel.app/",
+        source:"https://github.com/ervinarviandi/scoreboards-app",
+        name : "Badminton Scoreboards App",
+        description : "A simple scoreboard application used to display results  or points in a match",
+        image : "/scoreboards.png",
+        gambar: "/logo/icons/nextjs.png"
+        
+    },
+    {
+        id  :  2 ,
+        profiles:"" ,
         demo : "https://cek-khodam-ervin.vercel.app/",
         source:"https://github.com/ervinarviandi/Cek-Khodam",
         name : "Cek Khodam App",
@@ -15,7 +26,7 @@ export default [
         
     },
     {
-        id  :  2 ,
+        id  :  3 ,
         profiles:"" ,
         demo : "https://adzkin.vercel.app/",
         source:"https://github.com/ervinarviandi/adzkin-",
@@ -25,7 +36,7 @@ export default [
         
     },
     {
-        id  :  3 ,
+        id  :  4 ,
         profiles:"" ,
         demo: "https://copas-abangkuu.vercel.app/",
         source:"https://github.com/ervinarviandi/copas-abangkuu",
@@ -36,7 +47,7 @@ export default [
         
     },
     {
-        id  :  4 ,
+        id  :  5 ,
         profiles:"" ,   
         demo : "https://qrcode-ervin.vercel.app/",
         source: "https://github.com/ervinarviandi/QrCode-Generator-v2",
@@ -46,7 +57,7 @@ export default [
         
     },
     {
-         id  :  5 ,
+         id  :  6 ,
          profiles:"" ,
         demo : "https://pomodoro-ervin.vercel.app/",
         source:"https://github.com/ervinarviandi/Pomodoro-App",
@@ -57,7 +68,7 @@ export default [
         
     },
     {
-         id  :  6 ,
+         id  :  7 ,
          profiles:"" ,
          demo: "https://react-link.vercel.app/",
         source : "https://github.com/ervinarviandi/React-Link",
@@ -67,7 +78,7 @@ export default [
         
     },
     {
-         id  :  7 ,
+         id  :  8 ,
          profiles:"" ,
          demo : "https://ervin-starter-kit-next-app-router.vercel.app/",
         source : "https://github.com/ervinarviandi/ervin-starterKit-next-app-router",

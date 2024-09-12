@@ -3,7 +3,6 @@ import Image from "next/image"
 import cardlist from "@/app/Projects"
 import Link from "next/link"
 import { useState } from "react"
-import { HiOutlineArrowCircleRight } from "react-icons/hi";
 import { Project } from "next/dist/build/swc"
 import { AiFillGithub } from "react-icons/ai";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";

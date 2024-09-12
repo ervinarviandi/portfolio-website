@@ -120,10 +120,10 @@ const Navigation = () => {
               </li>
               <li>
                 <Link
-                  href="/guestbook"
+                  href="/blog"
                   className="link link-underline link-underline-black pb-2 text-sm text-white-100 dark:text-dark-100"
                 >
-                  Guestbook
+                  Blog
                 </Link>
               </li>
               <li>
@@ -229,11 +229,11 @@ const Navigation = () => {
                   </li>
                   <li className="p-2 px-4 text-2xl   group ">
                     <Link
-                      href="/guestbook"
+                      href="/blog"
                       className="link link-underline link-underline-black border-1 flex items-center gap-2 border-b border-dashed  border-[#525252]  pb-2 text-white-100 dark:border-dark-100 dark:text-dark-100"
                     >
                       <BiCommentDetail size={20} className="group-hover:rotate-12 duration-300 transition-all"/>
-                      Guestbook
+                      Blog
                     </Link>
                   </li>
                   <li className="p-2 px-4 text-2xl   group">

@@ -7,6 +7,7 @@ import {
   } from "@/components/ui/accordion"
 
   import { WavyBackground } from '../ui/wavy-background'
+import { version } from 'os'
   // membuat  aplikasi dengan next js dan tailwind
   
 const Questions = () => {
@@ -16,13 +17,13 @@ const Questions = () => {
           <h2 className='text-center lg:text-5xl md:text-4xl text-3xl font-bold'>Questions that nobody asked</h2>
           <p className='lg:text-lg md:text-md text-md text-center  mt-4 dark:text-[#777777]'>but still my asked be helpfull</p>
 
-          <div className='grdi :md:grid-cols-5 gap-x-5'></div>
+          <div className='grid md:grid-cols-5 gap-x-5'></div>
           <div className='mt-10'>
               <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Apa itu aplikasi membuat website?</AccordionTrigger>
+              <AccordionTrigger className='text-left'>What technologies are used to create the application?</AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                So many technologies 👌.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">

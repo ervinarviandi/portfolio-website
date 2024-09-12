@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 import Certificate from '@/app/certificate/slug/Certificate'
 import Navigation from '@/components/commons/Navigation'
 import {motion} from "framer-motion"
