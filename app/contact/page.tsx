@@ -59,7 +59,7 @@ const page = () => {
           </TableRow>
           <TableRow>
             <TableCell className="font-medium">Email</TableCell>
-            <TableCell><Link href="mailto:muhamadervin34@gmail.com" className='dark:text-sky-400 text-sky-500'>muhamadervin34@gmail.com</Link></TableCell>
+            <TableCell><Link href="mailto:muhamadervin34@gmail.com" className=' text-[#7bf080]'>muhamadervin34@gmail.com</Link></TableCell>
           </TableRow>
         </TableBody>
       </Table>
@@ -86,15 +86,15 @@ const page = () => {
                   </TableRow> */}
                   <TableRow>
                     <TableCell className="font-medium">Instagram</TableCell>
-                    <TableCell><Link href="https://www.instagram.com/ervinarviandi/" className='dark:text-sky-400 text-sky-500'>https://www.instagram.com/ervinarviandi/</Link></TableCell>
+                    <TableCell><Link href="https://www.instagram.com/ervinarviandi/" className='text-[#7bf080] '>https://www.instagram.com/ervinarviandi/</Link></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Github</TableCell>
-                    <TableCell><Link href="https://github.com/ervinarviandi" className='dark:text-sky-400 text-sky-500'>https://github.com/ervinarviandi</Link></TableCell>
+                    <TableCell><Link href="https://github.com/ervinarviandi" className='dark:text-[#7bf080] text-[#7bf080]'>https://github.com/ervinarviandi</Link></TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">X</TableCell>
-                    <TableCell><Link href="https://x.com/EArviandi" className='dark:text-sky-400 text-sky-500'>https://x.com/EArviandi</Link></TableCell>
+                    <TableCell><Link href="https://x.com/EArviandi" className=' text-[#7bf080]'>https://x.com/EArviandi</Link></TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

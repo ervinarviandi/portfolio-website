@@ -52,7 +52,7 @@ const Page = () => {
               <p className='mt-5 lg:text-md text-sm'>
               FYI, I really like and enjoy learning new things related to technology, as a front-end developer, I have to keep up with technological developments. In the future there will definitely be many new features, tools and programming languages that will make it easier for us to create and develop 🔨🔮 a website application. 💻📱
               </p>
-              <p className='mt-5 lg:text-md text-sm font-Inconsolata border-l-2 pl-2 border-[#454a55]'>
+              <p className='mt-5 lg:text-md text-sm font-Inconsolata border-l-2 pl-2 border-[#7bf080] text-[#7bf080]'>
               I&apos;am passionate about Frontend Developer and enjoy working on the Web. I love combining my technical knowledge and creativity to build engaging and user-friendly websites and applications. 🔮
               </p>
 

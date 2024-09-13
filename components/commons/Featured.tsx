@@ -41,8 +41,9 @@ const Featured = () => {
 
 
   return (
-    <div  className='w-full  mx-auto lg:pb-40 pb-16 '>
+    <div  className='w-full  mx-auto lg:pb-40 pb-16  '>
         <div className='lg:max-w-5xl mx-auto px-5 py-10 '>
+      
        
         {/* <ActivityCalendar data={data} theme={explicitTheme} /> */}
           {
@@ -50,7 +51,7 @@ const Featured = () => {
               return (
                 <div key={item.id} className='flex flex-col '>
                   <div className='flex flex-col h-full w-full '>
-                    <p className='text-md font-bold dark:text-[#e0ff7d] text-[#e0ff7d] mt-20 mb-5'>
+                    <p className='text-md font-bold dark:text-[#7bf080] text-[#7bf080] mt-20 mb-5'>
                     {item.name}
                     </p>
                   <h2 className='lg:text-4xl text-2xl font-bold mb-4'>

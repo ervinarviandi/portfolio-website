@@ -30,7 +30,7 @@ const Projects = () => {
                 cardlist.map((card, index) =>  (
                   <div key={index} className="group relative rounded-lg   duration-300 ease-in-out hover:scale-[102%] hover:shadow-md dark:border-none dark:hover:bg-[#1e1e1e]  ">
                   <div className="group relative overflow-hidden  ">
-                    <div className="absolute right-0 top-0 flex items-center gap-1 rounded-bl-lg rounded-tr-lg bg-amber-500 p-1 backdrop-blur  text-black z-30  duration-200 text-sm ">
+                    <div className="absolute right-0 top-0 flex items-center gap-1 rounded-bl-lg rounded-tr-lg bg-[#7bf080] p-1 backdrop-blur  text-black z-30  duration-200 text-sm ">
                      {card.featured}
                     </div>
                     {/* <div data-testid="ribbon" id="ribbon-container" className="before:bg-amber-500 after:bg-amber-500"><div className=" flex items-center justify-center bg-amber-400  text-[11px] font-medium text-black"><span data-testid="ribbon-text" className="-ml-4 font-roboto-condensed">New</span><div className="absolute mx-4 h-6 w-2 animate-right-infinite bg-white opacity-30 shadow-sm shadow-white"></div></div></div> */}
@@ -54,14 +54,14 @@ const Projects = () => {
                     flex items-center justify-center gap-x-5 ">
                       <Link
                         href={card.demo !== undefined ? card.demo : "card.demo"} target="_blank"
-                        className="0 group flex items-center justify-center gap-2 py-[50px] text-gray-200  hover:text-[#05b6d3] "
+                        className="0 group flex items-center justify-center gap-2 py-[50px] text-gray-200  hover:text-[#7bf080] "
                       >
                         
                         <FaArrowUpRightFromSquare size={20} />
                       </Link>
                       <Link
                         href={card.source !== undefined ? card.source : "card.source"} target="_blank"
-                        className="0 group flex items-center justify-center gap-2 py-[50px] text-gray-200  hover:text-[#05b6d3] "
+                        className="0 group flex items-center justify-center gap-2 py-[50px] text-gray-200  hover:text-[#7bf080] "
                       >
                         <AiFillGithub size={20}/>
                         

@@ -12,7 +12,7 @@ const Hero = () => {
   const [isLoading, setLoading] = useState(true)
 
   return (
-    <motion.section className='w-full h-[100vh] dark:bg-[#131313]  bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]  relative flex items-center justify-center  '  initial={{ y: 250 }} animate={{ y: -10 }} transition={{  delay: 3.1, type: "spring" }}>
+    <motion.section className='w-full h-[100vh] dark:bg-[#131313]   bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]  relative flex items-center justify-center  '  initial={{ y: 250 }} animate={{ y: -10 }} transition={{  delay: 3.1, type: "spring" }}>
        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#131313] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,transparent_20%,#0A0A0A_100%,#0A0A0A_80%)]"></div>
         <div className='lg:max-w-5xl mx-auto px-5'>
             <div className='grid md:grid-cols-2 gap-x-5'>
