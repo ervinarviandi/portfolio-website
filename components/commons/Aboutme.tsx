@@ -52,6 +52,11 @@ const Aboutme = () => {
                                     Maps
                                     </Link>
                                 </li>
+                                <li>
+                                <Link href="/taskboard" target='_blank' className=' dark:text-white text-[#454a55]'>
+                                    Taskboard
+                                    </Link>
+                                </li>
                                 
                             
                             </ul>
