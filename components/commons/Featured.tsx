@@ -50,7 +50,7 @@ const Featured = () => {
               return (
                 <div key={item.id} className='flex flex-col '>
                   <div className='flex flex-col h-full w-full '>
-                    <p className='text-md font-bold dark:text-cyan-300 text-cyan-500 mt-20 mb-5'>
+                    <p className='text-md font-bold dark:text-[#e0ff7d] text-[#e0ff7d] mt-20 mb-5'>
                     {item.name}
                     </p>
                   <h2 className='lg:text-4xl text-2xl font-bold mb-4'>

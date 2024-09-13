@@ -28,12 +28,12 @@ const Questions = () => {
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>Is it styled?</AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className=''>
                 Yes. It comes with default styles that matches the other
                 components&apos; aesthetic.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-3">
+            <AccordionItem value="item-3" >
               <AccordionTrigger>Is it animated?</AccordionTrigger>
               <AccordionContent>
                 Yes. It&apos;s animated by default, b    

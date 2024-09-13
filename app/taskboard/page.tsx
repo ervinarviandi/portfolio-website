@@ -12,8 +12,8 @@ const page = () => {
           <p className='lg:text-lg text-sm mt-5 dark:text-[#777777]'>The task board to keep track of your tasks.</p>
         <hr className='border-2 border-dashed w-full mt-5' />
         <div>
-            <Taskboard/>
-        </div>
+            <Taskboard/>       
+         </div>
         </div>
     </div>
     <Footer/>

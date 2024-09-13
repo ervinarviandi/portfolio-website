@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 import { FaFire } from "react-icons/fa";
 
 
-
-
 export const CustomKanban = () => {
-
   interface Card {
     id: number;
     title: string;
@@ -74,10 +71,9 @@ const Column = ({ title, headingColor, cards, column, setCards } :any) => {
     const cardId = e.dataTransfer.getData("cardId");
 
     setActive(false);
-    const clearHighlights = (els :any) => {
-        
-    }
-    // clearHighlights();
+    clearHighlights(getIndicators());
+    
+ 
 
     const indicators = getIndicators();
     const { element } = getNearestIndicator(e, indicators);
@@ -164,7 +160,8 @@ const Column = ({ title, headingColor, cards, column, setCards } :any) => {
 
   
   const handleDragLeave = () => {
-    // clearHighlights();
+    const indicators = getIndicators();
+     clearHighlights(indicators);
     setActive(false);
   };
 
@@ -323,8 +320,8 @@ const DEFAULT_CARDS = [
   // BACKLOG
   { title: "Membuat Navbar menggunakan framer motion", id: "1", column: "backlog" },
   { title: "buat fitur taskboard menggunakan d&d", id: "2", column: "backlog" },
-//   { title: "[SPIKE] Migrate to Azure", id: "3", column: "backlog" },
-//   { title: "Document Notifications service", id: "4", column: "backlog" },
+  { title: "[SPIKE] Migrate to Azure", id: "3", column: "backlog" },
+  { title: "Document Notifications service", id: "4", column: "backlog" },
   // TODO
   {
     title: "fitur d&d",

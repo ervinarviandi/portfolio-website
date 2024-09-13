@@ -12,8 +12,8 @@ const Hero = () => {
   const [isLoading, setLoading] = useState(true)
 
   return (
-    <motion.section className='w-full h-[100vh] dark:bg-[#0A0A0A]  bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]  relative flex items-center justify-center  '  initial={{ y: 250 }} animate={{ y: -10 }} transition={{  delay: 3.1, type: "spring" }}>
-       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#0A0A0A] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,transparent_20%,#0A0A0A_100%,#0A0A0A_80%)]"></div>
+    <motion.section className='w-full h-[100vh] dark:bg-[#131313]  bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]  relative flex items-center justify-center  '  initial={{ y: 250 }} animate={{ y: -10 }} transition={{  delay: 3.1, type: "spring" }}>
+       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#131313] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,transparent_20%,#0A0A0A_100%,#0A0A0A_80%)]"></div>
         <div className='lg:max-w-5xl mx-auto px-5'>
             <div className='grid md:grid-cols-2 gap-x-5'>
                 <div className='flex flex-col relative z-10'>
@@ -28,7 +28,7 @@ const Hero = () => {
               onLoad={() => setLoading(false)} />
               <div className=' gap-x-2 flex items-center lg:mt-0 mt-7 '>
                 {/* <p className='lg:text-lg text-md'>Hy I'm  </p> */}
-                  <h2 className='lg:text-5xl text-2xl   font-bold'><span className='bg-gradient-to-r from-blue-400 via-cyan-300 to-cyan-200 bg-clip-text text-transparent'> Ervin Arviandi</span>  </h2>
+                  <h2 className='lg:text-5xl text-2xl   font-bold'><span className='bg-gradient-to-r from-[#7af080] via-[#e0ff7d] to-[#e0ff7d] bg-clip-text text-transparent'> Ervin Arviandi</span>  </h2>
                   <span className='lg:text-5xl'>👋</span>
                   {/* <h2 className='text-5xl bg-clip-text text-transparent  bg-gradient-to-r from-blue-500 via-teal-500 to-teal-500 font-bold'> ervin arviandi </h2> */}
               </div>
@@ -58,7 +58,7 @@ const Hero = () => {
                   <Link href={"/contact"}>
                 <Button
                 borderRadius="1.75rem"
-                className="bg-white dark:bg-[#0a0a0a] text-black dark:text-white  border-neutral-200 dark:border-neutral-700 "> 
+                className="bg-white dark:bg-[#131313] text-black dark:text-white  border-neutral-200 dark:border-neutral-700 "> 
                 Get In Touch
                 </Button>
                 </Link>

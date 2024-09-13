@@ -72,7 +72,7 @@ const Projects = () => {
                   {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div> */}
     
                   <div className="p-4">
-                    <h2 className="bg-gradient-to-r from-blue-400 via-cyan-300 to-cyan-200 bg-clip-text text-lg font-bold group-hover:text-transparent md:text-xl    ">
+                    <h2 className="bg-gradient-to-r  from-[#7af080] via-[#e0ff7d] to-[#e0ff7d] bg-clip-text text-lg font-bold group-hover:text-transparent md:text-xl    ">
                       {card.name}
                     </h2>
                     <p className="md:text-md py-3 text-sm dark:text-[#777777]">

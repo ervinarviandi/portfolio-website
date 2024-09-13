@@ -73,7 +73,7 @@ const Navigation = () => {
   }
   return (
     <>
-      <header className="lg:relative fixed lg:bg-transparent dark:text-white myNavigation  lg:z-10 z-50 w-full lg:bg-background-light/70 bg-backgroundlight/70 py-4 lg:backfrop-blur-none backdrop-blur-md duration-300 ease-in  dark:bg-backgrounddark/70 ">
+      <header className="lg:relative fixed lg:bg-transparent dark:text-white myNavigation  lg:z-10 z-50 w-full lg:bg-background-light/70 bg-backgroundlight/70 py-4 lg:backdrop-blur-none  duration-300 ease-in  dark:bg-backgrounddark/70 ">
         <div
           className="mx-auto flex items-center justify-between
          px-4 lg:max-w-5xl"
@@ -177,7 +177,7 @@ const Navigation = () => {
             <div
               className={
                 nav
-                  ? "absolute  backdrop-blur-md important bottom-0 left-0 right-0 top-0 z-40 h-screen w-full items-center gap-3   bg-white dark:bg-[#0a0a0a]  duration-300  ease-in  sm:hidden"
+                  ? "absolute  backdrop-blur-md important bottom-0 left-0 right-0 top-0 z-40 h-screen w-full items-center gap-3   bg-white dark:bg-[#131313]  duration-300  ease-in  sm:hidden"
                   : "dark:bg-[#0a0a0a] bg-white dark:text-white absolute bottom-0 left-[-100%] right-0 top-0 z-40 h-screen w-full items-center  backdrop-blur-md   duration-300 ease-in sm:hidden    "
               }
             >
