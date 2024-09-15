@@ -194,7 +194,7 @@ const Navigation = () => {
                     <h1 className="text-lg font-bold">Ervin Arviandi</h1>
                     
                   </div>
-                  <div className="p-1.2 hover:bg-[#525252] rounded-lg">
+                  <div className="p-1.2 dark:hover:bg-[#525252] hover:bg-[#dedddd] rounded-lg">
                     {renderThemeChanger()}
                     </div>
                 </div>
@@ -245,7 +245,7 @@ const Navigation = () => {
                       Contact
                     </Link>
                   </li>
-                  <li className="p-2 px-4 text-2xl  group ">
+                  {/* <li className="p-2 px-4 text-2xl  group ">
                     <Link
                       href="/myBlog"
                       className="link link-underline link-underline-black border-1 flex items-center gap-2 border-b border-dashed  border-[#525252]  pb-2 text-white-100 dark:border-dark-100 dark:text-dark-100"
@@ -253,7 +253,7 @@ const Navigation = () => {
                       <LiaBlogSolid size={20} className="group-hover:rotate-12 duration-300 transition-all"/>
                       Blog
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="p-2 px-4 text-2xl group  group">
                     <Link
                       href="/studio"
