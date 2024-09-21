@@ -1,5 +1,6 @@
 import React from 'react'
 import Writing from './slug/Writing'
+import Link from 'next/link'
 const ArticlesBlog = () => {
   return (
     <div className='w-full'>
@@ -7,7 +8,7 @@ const ArticlesBlog = () => {
            <div className='flex flex-col gap-y-7 mt-5'>
             {
                 Writing.map ((card, index) =>       
-                    <div key={index} className='flex justify-between items-center  border-t border-[#777777] p-4  '>
+                    <Link href={card.Links} key={index} className='flex justify-between items-center  border-t border-[#777777] p-4  '>
                       <div className=''>
                         {card.title}
                         <p className='mr-7'>
@@ -15,7 +16,7 @@ const ArticlesBlog = () => {
                         </p>
                       </div>
                         <p className='text-[#777777]'> {card.date}</p>
-                    </div>
+                    </Link>
                 )
             }
            </div>

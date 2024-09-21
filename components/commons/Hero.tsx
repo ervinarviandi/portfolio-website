@@ -2,7 +2,8 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import React from 'react'
-import Logo from "@/public/ervinarviandi.jpg"
+// import Logo from "@/public/ervinarviandi.jpg"
+import Logo from "@/app/Assets/Profile/lrweb.jpg"
 import Link from 'next/link'
 import GradualSpacing from '../magicui/gradual-spacing'
 import ShinyButton from '../magicui/shiny-button'
@@ -44,7 +45,7 @@ const Hero = () => {
                  
                 </div>
                 <div className='flex flex-col relative z-10'>
-                  <Image src={Logo} width={300} height={200} className={` grayscale
+                  <Image src={Logo} width={300} height={200} className={` grayscale 
                 hover:grayscale-0
                 duration-700 ease-in-out group-hover:opacity-75 mx-auto  rotate-6 lg:block hidden  
                 ${
