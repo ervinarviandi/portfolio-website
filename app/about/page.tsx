@@ -2,21 +2,16 @@
 import React from 'react'
 import { useState } from 'react';
 import Cloud from "@/components/magicui/icon-cloud";
-import CloudIcons from "@/components/atoms/Cloud"
-import { ModeToggle } from '@/components/atoms/ModeToggle';
 import Link from 'next/link';
-import LetterPullup from '@/components/magicui/letter-pullup';
 import Image from 'next/image';
-import Profile from "@/app/Assets/Profile/Profile.png"
+// import Profile from "@/app/Assets/Profile/Profile.png"
+import Profile from "@/public/ervinarviandi.jpg"
 import Navigation from '@/components/commons/Navigation';
 import { HiOutlineArrowCircleLeft } from "react-icons/hi";
-import FloatingNavDemo from "@/components/commons/FloatingNavDemo"
-import { TikTokEmbed } from 'react-social-media-embed';
 import Certificate from '@/app/about/slug/Certificate';
 import { ConfettiFireworks } from '@/components/commons/particles/ConfetiFireworksButton';
 import Footer from '@/components/commons/Footer';
 import {motion} from "framer-motion"
-import Maps from '../maps/page';
 const Page = () => {
 
 

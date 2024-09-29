@@ -13,6 +13,7 @@ import Image7 from "@/app/Assets/certificate/progate.png"
 import Image8 from "@/app/Assets/certificate/wbix.jpg"
 import Image9 from "@/app/Assets/certificate/Cintessa.jpg"
 import Image10 from "@/app/Assets/certificate/Sertifikat Coding Camp Front End - Moh Ervin Arviandi.webp"
+import Image11 from "@/app/Assets/certificate/HACKTIVE8.jpg"
 
 
 
@@ -22,6 +23,16 @@ const Certificate = () => {
 
   return (
     <div className='grid md:grid-cols-3 gap-5 mx-auto py-10'>
+       <div className='flex flex-col'>
+            <Image src={Image11} width={400} height={400} alt="image10" className={`
+              duration-700 ease-in-out group-hover:opacity-75
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+          onLoad={() => setLoading(false)}/>
+        </div>
         <div className='flex flex-col'>
             <Image src={Dibimbing} width={400} height={400} alt="image1" className={`
               duration-700 ease-in-out group-hover:opacity-75
@@ -132,6 +143,7 @@ const Certificate = () => {
               })`}
           onLoad={() => setLoading(false)}/>
         </div>
+       
     </div>
   )
 }

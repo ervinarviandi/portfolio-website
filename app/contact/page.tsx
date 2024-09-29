@@ -41,13 +41,13 @@ const page = () => {
             {/* Table */}
 
             <div>
-                <h2 className='lg:text-3xl text-2xl font-bold mt-10 mb-5 '>Contact</h2>
+                <h2 className='lg:text-3xl text-2xl font-bold mt-10 mb-5  '>Contact</h2>
             <Table className='border rounded-b-lg'>
-        <TableCaption>a list contact </TableCaption>
+        <TableCaption  className='dark:text-[#777777]  text-[#758498]'>a list contact </TableCaption>
         <TableHeader className=' border'>
           <TableRow className=''>
-            <TableHead  className="w-[100px]">Contact</TableHead>
-            <TableHead className=''>Detail</TableHead>
+            <TableHead  className="w-[100px] dark:text-[#777777]  text-[#758498]">Contact</TableHead>
+            <TableHead className='dark:text-[#777777]  text-[#758498]'>Detail</TableHead>
             {/* <TableHead>Method</TableHead>
             <TableHead className="text-right">Amount</TableHead> */}
           </TableRow>
@@ -70,11 +70,11 @@ const page = () => {
             <div>
               <h2 className='lg:text-3xl text-2xl font-bold mt-10 mb-5 '>Social Media</h2>
                 <Table className='border rounded-b-lg'>
-                <TableCaption>a list social media </TableCaption>
+                <TableCaption className='dark:text-[#777777]  text-[#758498]'>a list social media </TableCaption>
                 <TableHeader className=' border'>
                   <TableRow className=''>
-                    <TableHead  className="w-[100px]">Contact</TableHead>
-                    <TableHead className=''>Detail</TableHead>
+                    <TableHead  className="w-[100px] dark:text-[#777777]  text-[#758498]">Contact</TableHead>
+                    <TableHead className=' dark:text-[#777777]  text-[#758498]'>Detail</TableHead>
                     {/* <TableHead>Method</TableHead>
                     <TableHead className="text-right">Amount</TableHead> */}
                   </TableRow>
