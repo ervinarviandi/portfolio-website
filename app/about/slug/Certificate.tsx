@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { link } from 'fs'
 
 
 
@@ -82,7 +83,6 @@ const Certificate = () => {
             name : "Hacktive8",
             title:" Dari Beginner sampai Jadi Front End Developer: Bikin Aplikasi Dengan Next.js & TypeScript.",
             date: "Senin 02-april-2022"
-
         },
     ];
   return (

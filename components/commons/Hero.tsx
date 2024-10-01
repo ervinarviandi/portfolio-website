@@ -41,7 +41,7 @@ const Hero = () => {
                   {/* <p className='mt-5 '
                   >Frontend Engineer, TypeScript Addict, based in Dompu West Nusa Tenggara </p> */}
                   {/* <p className='lg:text-md text-sm mt-7'>My professional path has been characterized by a dedication to web development, where I utilize Javascript, HTML, CSS, and ReactJS to transform creative visions into reality. My work ensures that the final products are not only visually appealing but also functional and optimized for a broad range of devices and browsers.</p> */}
-                  <p className='lg:mt-0 mt-7 mb-5'>I am a graduate of the Faculty of Engineering, Bumigora University, majoring in software engineering. I create intuitive, smooth, modern and visually appealing user interfaces that are fun for users. Of course, using the latest technology.</p>
+                  <p className='lg:mt-0 mt-7 mb-5'>I study at , Bumigora University, majoring in software engineering. I create intuitive, fluid, modern, and visually appealing user interfaces that are pleasing to the user. Of course, using the latest technology.</p>
                  
                 </div>
                 <div className='flex flex-col relative z-10'>

@@ -1,5 +1,5 @@
 
-
+// all articles 
 
 export default  [
     {

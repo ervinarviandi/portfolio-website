@@ -13,11 +13,11 @@ const table = () => {
   return (
     <div className=''>
           <Table className='border rounded-b-lg'>
-        <TableCaption>a list advan workplus setup </TableCaption>
+        <TableCaption className=' dark:text-[#777777]  text-[#758498]'>a list advan workplus setup </TableCaption>
         <TableHeader className=' border'>
           <TableRow className=''>
-            <TableHead  className="w-[100px]">Name</TableHead>
-            <TableHead className=''>Detail</TableHead>
+            <TableHead  className="w-[100px]  dark:text-[#777777]  text-[#758498]">Name</TableHead>
+            <TableHead className='  dark:text-[#777777]  text-[#758498]'>Detail</TableHead>
             {/* <TableHead>Method</TableHead>
             <TableHead className="text-right">Amount</TableHead> */}
           </TableRow>
